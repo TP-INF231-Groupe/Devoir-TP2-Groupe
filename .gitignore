@@ -45,8 +45,6 @@
 # Kernel Module Compile Results
 *.mod*
 
-#iginore .git folder
-*.git/
 *.cmd
 .tmp_versions/
 modules.order
@@ -56,3 +54,6 @@ dkms.conf
 
 # debug information files
 *.dwo
+
+#iginore .git folder
+.git/
