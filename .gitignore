@@ -44,6 +44,9 @@
 
 # Kernel Module Compile Results
 *.mod*
+
+#iginore .git folder
+*.git/
 *.cmd
 .tmp_versions/
 modules.order
