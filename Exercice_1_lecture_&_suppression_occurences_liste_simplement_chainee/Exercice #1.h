@@ -5,14 +5,14 @@
 #include <stdlib.h>
 
 // Définition de la structure Node
-typedef struct Node {
-    int data;
-    struct Node* next;
-} Node;
+struct Node;
+
 
 // Prototypes des fonctions
-Node* supprmerOccurence(Node* head, int val);
-void afficherListe(Node* head);
-Node* insererEnTete(Node* head, int val);
+void supprmerOccurence(struct Node* head, int val);
+
+void afficherListe(struct Node* head);
+
+Node* insererEnTete(struct Node* head, int val);
 
 #endif

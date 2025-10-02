@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Exercice #1.h"
 
 typedef struct Node {
     int data;
@@ -7,55 +8,66 @@ typedef struct Node {
 } Node;
 
 // Fonction pour supprimer toutes les occurrences d'une valeur Node
-supprmerOccurence(Node*head, int val) {
-    while (head != NULL && head->data == val) {
-        Node* temp = head;
+void supprmerOccurence(Node** head, int val) {
+    Node* curr = *head;
+    Node* prev = NULL;
+    while (curr != NULL) {
+        if (curr == *head && curr->data == val){
+            *head = curr->next;
+            free(curr);
+            curr = *head;
+        }else if (curr != *head && curr->data == val){
+            prev->next = curr->next;
+            free(curr);
+            curr = prev->next;
+        }else{
+            prev = curr;
+            curr = curr->next;
+        }
+        afficherListe(*head);
+
+    }
+}
+
+// Fonction pour afficher la liste
+void afficherListe(Node* head) {
+    while (head != NULL) {
+        printf("%d -> ", head->data);
         head = head->next;
-        free(temp);
     }
-    Node* current = head;
-    while (current != NULL && current->next != NULL) {
-        if (current->next->data == val) {
-            Node* temp = current->next;
-            current->next = temp->next;
-            free(temp);
-        } else {
-            current = current->next;
-        }
-    }
-    
-    // Fonction pour afficher la liste
-    void afficherListe(Node* head) {
-        while (head != NULL) {
-            printf("%d -> ", head->data);
-            head = head->next;
-        }
-        printf("NULL\n");
-    }
-     
+    printf("NULL\n");
+}
+
     // Fonction pour insérer un élément en tête
-    Node* insererEnTete(Node* head, int val) {
-        Node* newNode = (Node*)malloc(sizeof(Node));
-        newNode->data = val;
-        newNode->next = head;
-        return newNode;
-    }
+Node* insererEnTete(Node** head, int val) {
+    Node* newNode = malloc(sizeof(Node));
+    newNode->data = val;
+    newNode->next = *head;
+    *head = newNode;
 
-    int main () {
-        Node* liste = NULL;
-        liste = insererEnTete(liste, 3);
-        liste = insererEnTete(liste, 5);
-        liste = insererEnTete(liste, 7);
-        
-        printf("Liste initiale :\n");
-        afficherListe(liste);
+    return newNode;
+}
 
-        int valeur;
-        printf("Entrez la valeur à supprimer : ");
-        scanf("%d", &valeur);
+int main () {
+    Node* head = NULL;
+    Node* tail = NULL;
+    insererEnTete(&head, 3);
+    insererEnTete(&head, 5);
+    insererEnTete(&head, 7);
+    insererEnTete(&head, 5);
+    insererEnTete(&head, 2);
 
-        liste = supprmerOccurence(liste, valeur);
-        printf("Liste après suppression :\n");
-        afficherListe(liste);
-        return 0;           
-    }   
+    printf("Liste initiale :\n");
+    afficherListe(head);
+
+    int valeur;
+    printf("Entrez la valeur à supprimer : ");
+    scanf("%d", &valeur);
+
+    supprmerOccurence(&head, valeur);
+    printf("Liste après suppression :\n");
+    afficherListe(head);
+
+    printf("La tete est: %d", head->data);
+    return 0;
+}
