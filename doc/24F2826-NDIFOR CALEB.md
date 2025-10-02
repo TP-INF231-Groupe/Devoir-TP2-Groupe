@@ -30,22 +30,26 @@ Affiche la liste après suppression.
 
     Début
    Définir une structure Node avec :
+
        entier data
        pointeur vers Node next
 
    Fonction insererEnTete(head, val) :
+
        créer un nouveau nœud
        newNode.data ← val
        newNode.next ← head
        retourner newNode
 
    Fonction afficherListe(head) :
+
        tant que head ≠ NULL faire
            afficher head.data
            head ← head.next
        afficher "NULL"
 
    Fonction supprimerOccurence(head, val) :
+
        tant que head ≠ NULL ET head.data = val faire
            temp ← head
            head ← head.next
@@ -61,6 +65,7 @@ Affiche la liste après suppression.
        retourner head
 
    Début programme principal :
+
        liste ← NULL
        insérer 3 en tête
        insérer 5 en tête
@@ -69,7 +74,8 @@ Affiche la liste après suppression.
        lire valeur à supprimer
        liste ← supprimerOccurence(liste, valeur)
        afficher liste après suppression
-   Fin
+
+       Fin
 .
 
 6. Complexité
@@ -82,3 +88,4 @@ Suppression : O(n)
 
 Complexité totale : O(n)
  
+
