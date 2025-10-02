@@ -119,7 +119,7 @@ Ce projet pospose une solution efficace pour resoudre ce probleme.<br>
 
 ## Quelques definitions
 > <u>*noeud*</u>: Enregistrement comportant un champ "next", "prev" qui pointent vers le meme structure et un ou plusieurs champs selon le besoin.<br>
-> *Liste simplement chainnée circulaire:* Un ensemble de <u>*noeud*</u> liés dont l'élement suivant du dernier noeud c'est sur le premier.<br>
+> *Liste doublement chainnée circulaire:* Un ensemble de <u>*noeud*</u> liés dont le <u>*noeud*</u> suivant du dernier <u>*noeud*</u> c'est sur le premier et le <u>*noeud*</u> precedent du premier <u>*noeud*</u> c'est le dernier.<br>
 > *Tete*: Le premier noeud de la liste.<br>
 > *Tail*: Le dernier noeud de la liste.<br>
 
