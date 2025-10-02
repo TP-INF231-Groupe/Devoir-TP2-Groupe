@@ -1,9 +1,9 @@
-# 📜Rapport d’avancement personnel
-## 1. Problème à résoudre
+# 📜**Rapport d’avancement personnel**
+## **1. Problème à résoudre**
 
 Le programme a pour objectif de supprimer toutes les occurrences d’une valeur donnée dans une liste.
  
-## 2. Principe du code
+## **2. Principe du code**
 
 > Définition de la structure Node : chaque nœud contient une donnée (data) et un pointeur vers le nœud suivant (next).<br>
 
@@ -26,7 +26,23 @@ Le programme a pour objectif de supprimer toutes les occurrences d’une valeur 
 > Affiche la liste après suppression.
 
 
-## 4. Algorithme (pseudo-code)
+## **3. Dictionnaire de donnée**
+
+| Nom        | Type     | Rôle                                                                 |
+|------------|----------|----------------------------------------------------------------------|
+| Node       | struct   | Structure représentant un nœud de la liste chaînée.                  |
+| data       | int      | La valeur entière stockée dans un nœud.                              |
+| next       | Node*    | Pointeur vers le nœud suivant de la liste.                           |
+| head       | Node*    | Pointeur vers le premier élément de la liste chaînée.                |
+| val        | int      | Valeur entière à supprimer ou insérer dans la liste.                 |
+| temp       | Node*    | Pointeur temporaire utilisé pour libérer un nœud lors de la suppression. |
+| current    | Node*    | Pointeur de parcours pour trouver les occurrences à supprimer.       |
+| newNode    | Node*    | Nouveau nœud créé lors d’une insertion en tête.                      |
+| liste      | Node*    | Liste chaînée manipulée dans le programme principal.                 |
+| valeur     | int      | Valeur saisie par l’utilisateur pour être supprimée de la liste.     |
+
+
+## **4. Algorithme (pseudo-code)**
 
     Début
   ### Définir une structure Node avec :
@@ -78,7 +94,7 @@ Le programme a pour objectif de supprimer toutes les occurrences d’une valeur 
        Fin
 .
 
-## ⏱ 6. Complexité
+## ⏱ **6. Complexité**
 
 > Insertion : O(1)
 
@@ -88,6 +104,7 @@ Le programme a pour objectif de supprimer toutes les occurrences d’une valeur 
 
 > Complexité totale : O(n)
  
+
 
 
 
