@@ -85,18 +85,19 @@ Ce projet pospose une solution efficace pour resoudre ce probleme.
 
 ## 📖 Dictionnaire de données
 
-| **Données** | **Type** | **Description** |
-| *Node* | enregistrement | represente un noeud |
-| *->next* | pointeur (Node*) | represente l'element suivant d'un noeud|
-| *->data* | char | represente le contenu du noeud, la valeur saisie pa l'utilisateur |
-| *head* | Pointeur (Node*) | represente la tete de la liste |
-| *tail* | pointeur (Node*) | represente la queue de la liste |
-| *create_node()* | fonction | fonction qui premet de creer un noeud |
-| *display_simple_circular_list()* | fonction | represente la fonction qui affiche la liste |
-| *insert_front_in_simple_circular_list()* | fonction | represente la fonction pour inserer une valeur en tete de liste |
-| *insert_back_in_simple_circular_list()* | fonction | represente la fonction pour inserer une valeur en queue de liste |
-| *display_menu()* | fonction | represente la fonction pour afficher le menu |
-| *input_number()* | fonction | represente la fonction qui permet a l'utilisateur de faire un choix du menu |
+| **Données**                         | **Type**            | **Description**                                                  |
+|-------------------------------------|---------------------|------------------------------------------------------------------|
+| *Node*                              | enregistrement      | Représente un nœud                                               |
+| *->next*                            | pointeur (Node*)    | Représente l’élément suivant d’un nœud                           |
+| *->data*                            | char                | Représente le contenu du nœud, la valeur saisie par l’utilisateur |
+| *head*                              | pointeur (Node*)    | Représente la tête de la liste                                   |
+| *tail*                              | pointeur (Node*)    | Représente la queue de la liste                                  |
+| *create_node()*                     | fonction            | Fonction qui permet de créer un nœud                             |
+| *display_simple_circular_list()*    | fonction            | Fonction qui affiche la liste                                    |
+| *insert_front_in_simple_circular_list()* | fonction       | Fonction qui insère une valeur en tête de liste                  |
+| *insert_back_in_simple_circular_list()*  | fonction       | Fonction qui insère une valeur en queue de liste                 |
+| *display_menu()*                    | fonction            | Fonction qui affiche le menu                                     |
+| *input_number()*                    | fonction            | Fonction qui permet à l’utilisateur de faire un choix du menu    |
 
  
 ## ⚡ Complexité
