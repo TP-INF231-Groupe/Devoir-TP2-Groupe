@@ -14,7 +14,7 @@ Université de Yaoundé I – L2 Informatique
 ## 📱💻Exercices et fichiers
 
 💻1. Suppression dans une liste simplement chaînée
-- **Fichier :** `liste_simple.c` / `liste_simple.h`  
+- **Fichier :** `Exercice #1.c` / `Exercice #1.h`  
 - **Fonction principale :** `supprimerOccurences()`  
 - **Description :**  
   Lit une valeur donnée et supprime toutes ses occurrences dans la liste.  
@@ -22,7 +22,7 @@ Université de Yaoundé I – L2 Informatique
 
 ---
 📑📑2. Insertion dans une liste simplement chaînée triée
-- **Fichier :** `liste_simple.c`  
+- **Fichier :** `Exercice #2.c` / `Exercice #2.h`  
 - **Fonction principale :** `insererTrie()`  
 - **Description :**  
   Insère un élément à la bonne position dans une liste triée (ordre croissant).  
@@ -40,7 +40,7 @@ Université de Yaoundé I – L2 Informatique
 ---
 
 📝4. Insertion en tête et en queue – Liste simplement chaînée circulaire
-- **Fichier :** `liste_circulaire_simple.c` / `liste_circulaire_simple.h`  
+- **Fichier :** `insertion_simple_circulaire.c` / `insertion_simple_circulaire.h`  
 - **Fonctions principales :**  
   - `insererTeteCirculaire()`  
   - `insererQueueCirculaire()`  
@@ -51,7 +51,7 @@ Université de Yaoundé I – L2 Informatique
 ---
 
 📓🖍️5. Insertion en tête et en queue – Liste doublement chaînée circulaire
-- **Fichier :** `liste_circulaire_double.c` / `liste_circulaire_double.h`  
+- **Fichier :** `insertion_double_circulaire.c` / `insertion_double_circulaire.h`  
 - **Fonctions principales :**  
   - `insererTeteDoubleCirculaire()`  
   - `insererQueueDoubleCirculaire()`  
