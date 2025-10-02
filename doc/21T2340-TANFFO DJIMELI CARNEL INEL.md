@@ -4,27 +4,27 @@
 ## 📌 Problème
 La diffucluté principale ici reside dans le fait d'inserser un élement (dans notre solution, un caractere * **char** *) 
 au debut ou a la fin d'une liste simplement chainnée circulaire. 
-Ce projet pospose une solution efficace pour resoudre ce probleme.
+Ce projet pospose une solution efficace pour resoudre ce probleme.<br>
 
 
 ## Quelques definitions
-> *Noeud*: Enregistrement comportant un champ "next" qui pointe vers le meme structure et un ou plusieurs champs selon le besoin.
-> *Liste simplement chainnée circulaire:* Un ensemble de *noeud* liés dont l'élement suivant du dernier noeud c'est sur le premier.
-> *Tete*: Le premier noeud de la liste.
-> *Tail*: Le dernier noeud de la liste.
+> <u>*noeud*</u>: Enregistrement comportant un champ "next" qui pointe vers le meme structure et un ou plusieurs champs selon le besoin.<br>
+> *Liste simplement chainnée circulaire:* Un ensemble de <u>*noeud*</u> liés dont l'élement suivant du dernier noeud c'est sur le premier.<br>
+> *Tete*: Le premier noeud de la liste.<br>
+> *Tail*: Le dernier noeud de la liste.<br>
 
 
 ## 🔎 Principe
-* On cree un *noeud* tete et un *noeud* queue qu'on initialise a NULL. 
+* On cree un <u>*noeud*</u> tete et un <u>*noeud*</u> queue qu'on initialise a NULL. 
 * **Dans une insertion en tete:**
-    - On cree un nouveau *noeud*. 
-    - Si la liste est vide, alors le *noeud* suivant du noeud crée c'est lui meme, la tete et la queue tous deux égalent le *noeud* crée.
-    - Si la liste n'est pas vide, alors on definit le *noeud* crée comme étant la nouvelle tete et l'élement suivant de la queue devient.la nouvelle tete.
+    - On cree un nouveau <u>*noeud*</u>. 
+    - Si la liste est vide, alors le <u>*noeud*</u> suivant du noeud crée c'est lui meme, la tete et la queue tous deux égalent le <u>*noeud*</u> crée.
+    - Si la liste n'est pas vide, alors on definit le <u>*noeud*</u> crée comme étant la nouvelle tete et l'élement suivant de la queue devient.la nouvelle tete.
 
 * **Dans une insertion en queue:**
-    - On cree un nouveau *noeud*. 
-    - Si la liste est vide, alors le *noeud* suivant du noeud crée c'est lui meme, la tete et la queue tous deux égalent le *noeud* crée.
-    - Si la liste n'est pas vide, alors on definit le *noeud* crée comme étant la nouvelle queue et l'élement suivant de la nouvelle queue c'est la tete 
+    - On cree un nouveau <u>*noeud*</u>. 
+    - Si la liste est vide, alors le <u>*noeud*</u> suivant du noeud crée c'est lui meme, la tete et la queue tous deux égalent le <u>*noeud*</u> crée.
+    - Si la liste n'est pas vide, alors on definit le <u>*noeud*</u> crée comme étant la nouvelle queue et l'élement suivant de la nouvelle queue c'est la tete 
 
 
 ## 🧮 Algorithme
@@ -101,10 +101,12 @@ Ce projet pospose une solution efficace pour resoudre ce probleme.
 
  
 ## ⚡ Complexité
-| **Algorithme** | **Complexité en temps** | **Complexité en espace** |
-| *Insertion en tete* | O(1) | O(n) | 
-| *Insertion en queue* | O(1) | O(n) |
-| *Affichage de la liste* | O(n) | O(1) |
+
+| **Algorithme**        | **Complexité en temps** | **Complexité en espace** |
+|-----------------------|-------------------------|--------------------------|
+| *Insertion en tete*   | O(1)                    | O(n)                     | 
+| *Insertion en queue*  | O(1)                    | O(n)                     |
+| *Affichage de la liste* | O(n)                  | O(1)                     |
 
 
 ## 👨‍💻 Auteur
