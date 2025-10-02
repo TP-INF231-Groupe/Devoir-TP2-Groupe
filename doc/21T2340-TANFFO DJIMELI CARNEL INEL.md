@@ -6,7 +6,6 @@ La diffucluté principale ici reside dans le fait d'inserser un élement (dans n
 au debut ou a la fin d'une liste simplement chainnée circulaire. 
 Ce projet pospose une solution efficace pour resoudre ce probleme.<br>
 
-
 ## Quelques definitions
 > <u>*noeud*</u>: Enregistrement comportant un champ "next" qui pointe vers le meme structure et un ou plusieurs champs selon le besoin.<br>
 > *Liste simplement chainnée circulaire:* Un ensemble de <u>*noeud*</u> liés dont l'élement suivant du dernier noeud c'est sur le premier.<br>
@@ -104,8 +103,8 @@ Ce projet pospose une solution efficace pour resoudre ce probleme.<br>
 
 | **Algorithme**        | **Complexité en temps** | **Complexité en espace** |
 |-----------------------|-------------------------|--------------------------|
-| *Insertion en tete*   | O(1)                    | O(n)                     | 
-| *Insertion en queue*  | O(1)                    | O(n)                     |
+| *Insertion en tete*   | O(1)                    | O(1)                     | 
+| *Insertion en queue*  | O(1)                    | O(1)                     |
 | *Affichage de la liste* | O(n)                  | O(1)                     |
 
 
