@@ -1,54 +1,54 @@
-Rapport d’avancement personnel
-1. Problème à résoudre
+# 📜Rapport d’avancement personnel
+## 1. Problème à résoudre
 
 Le programme a pour objectif de supprimer toutes les occurrences d’une valeur donnée dans une liste.
  
-2. Principe du code
+## 2. Principe du code
 
-Définition de la structure Node : chaque nœud contient une donnée (data) et un pointeur vers le nœud suivant (next).
+> Définition de la structure Node : chaque nœud contient une donnée (data) et un pointeur vers le nœud suivant (next).<br>
 
-Insertion en tête : une fonction insererEnTete permet d’ajouter un nouvel élément au début de la liste.
+> Insertion en tête : une fonction insererEnTete permet d’ajouter un nouvel élément au début de la liste.<br>
 
-Suppression d’occurrences : la fonction supprmerOccurence parcourt la liste et supprime tous les nœuds qui contiennent la valeur donnée.
+> Suppression d’occurrences : la fonction supprmerOccurence parcourt la liste et supprime tous les nœuds qui contiennent la valeur donnée.<br>
 
-Affichage : la fonction afficherListe parcourt la liste et affiche les éléments sous la forme valeur -> ... -> NULL.
+> Affichage : la fonction afficherListe parcourt la liste et affiche les éléments sous la forme valeur -> ... -> NULL.<br>
 
-Programme principal (main) :
+## Programme principal (main) :
 
-Crée une liste avec quelques valeurs initiales.
+> Crée une liste avec quelques valeurs initiales.
 
-Affiche la liste avant suppression.
+> Affiche la liste avant suppression.
 
-Demande à l’utilisateur une valeur à supprimer.
+> Demande à l’utilisateur une valeur à supprimer.
 
-Supprime toutes les occurrences de cette valeur.
+> Supprime toutes les occurrences de cette valeur.
 
-Affiche la liste après suppression.
+> Affiche la liste après suppression.
 
 
-4. Algorithme (pseudo-code)
+## 4. Algorithme (pseudo-code)
 
     Début
-   Définir une structure Node avec :
+  ### Définir une structure Node avec :
 
        entier data
        pointeur vers Node next
 
-   Fonction insererEnTete(head, val) :
+  ### Fonction insererEnTete(head, val) :
 
        créer un nouveau nœud
        newNode.data ← val
        newNode.next ← head
        retourner newNode
 
-   Fonction afficherListe(head) :
+  ### Fonction afficherListe(head) :
 
        tant que head ≠ NULL faire
            afficher head.data
            head ← head.next
        afficher "NULL"
 
-   Fonction supprimerOccurence(head, val) :
+ ### Fonction supprimerOccurence(head, val) :
 
        tant que head ≠ NULL ET head.data = val faire
            temp ← head
@@ -64,7 +64,7 @@ Affiche la liste après suppression.
                current ← current.next
        retourner head
 
-   Début programme principal :
+ ## Début programme principal :
 
        liste ← NULL
        insérer 3 en tête
@@ -78,15 +78,16 @@ Affiche la liste après suppression.
        Fin
 .
 
-6. Complexité
+## ⏱ 6. Complexité
 
-Insertion : O(1)
+> Insertion : O(1)
 
-Affichage : O(n)
+> Affichage : O(n)
 
-Suppression : O(n)
+> Suppression : O(n)
 
-Complexité totale : O(n)
+> Complexité totale : O(n)
  
+
 
 
