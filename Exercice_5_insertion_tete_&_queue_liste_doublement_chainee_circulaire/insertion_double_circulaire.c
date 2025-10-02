@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "insertion_double_circulaire.h"
 
 
 void display_menu(){

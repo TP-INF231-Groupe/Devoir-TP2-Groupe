@@ -72,19 +72,6 @@ void display_simple_circular_list(Node* head){
 }
 
 
-int circular_len(Node* head){
-    if (!head) return 0;
-
-    int l = 0;
-    Node* temp = head;
-    do {
-        l++;
-        temp = temp->next;
-    } while (temp != head);
-    return l;
-}
-
-
 void insert_front_in_simple_circular_list(Node** head, Node** tail, char data){
     Node* new_node = create_node(data);
     if (!*head){
@@ -95,7 +82,6 @@ void insert_front_in_simple_circular_list(Node** head, Node** tail, char data){
         new_node->next = *head;
         (*tail)->next = new_node;
         *head = new_node;
-
     }
 }
 

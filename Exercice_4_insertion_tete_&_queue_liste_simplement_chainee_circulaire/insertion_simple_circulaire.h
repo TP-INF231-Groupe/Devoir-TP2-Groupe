@@ -4,7 +4,7 @@
 #define INSERTION_SIMPLE_CIRCULAIRE
 
 
-typedef struct Node;
+struct Node;
 
 
 void display_menu();
