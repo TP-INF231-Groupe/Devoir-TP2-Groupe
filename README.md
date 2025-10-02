@@ -32,7 +32,7 @@ Université de Yaoundé I – L2 Informatique
 
 📘🖊️3. Insertion dans une liste doublement chaînée triée
 - **Fichier :** `Exercice #3.c` / `Exercice #3.h`  
-- **Fonction principale :** `InsererDansListe()`  
+- **Fonction principale :** `CreerNoeud()`  
 - **Description :**  
   Insère un élément dans une liste doublement chaînée triée en mettant à jour `prev` et `next`.  
 - **Résumé :** gestion simultanée des deux pointeurs.
