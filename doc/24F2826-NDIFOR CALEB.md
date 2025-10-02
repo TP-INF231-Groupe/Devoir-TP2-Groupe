@@ -1,4 +1,4 @@
-        Rapport d’avancement personnel
+Rapport d’avancement personnel
 1. Problème à résoudre
 
 Le programme a pour objectif de supprimer toutes les occurrences d’une valeur donnée dans une liste.
@@ -88,4 +88,5 @@ Suppression : O(n)
 
 Complexité totale : O(n)
  
+
 
