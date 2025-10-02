@@ -103,6 +103,7 @@ Ce projet pospose une solution efficace pour resoudre ce probleme.
 | **Algorithme** | **Complexité en temps** | **Complexité en espace** |
 | *Insertion en tete* | O(1) | O(n) | 
 | *Insertion en queue* | O(1) | O(n) |
+| *Affichage de la liste* | O(n) | O(1) |
 
 
 ## 👨‍💻 Auteur
