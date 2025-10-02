@@ -42,8 +42,8 @@ Université de Yaoundé I – L2 Informatique
 📝4. Insertion en tête et en queue – Liste simplement chaînée circulaire
 - **Fichier :** `insertion_simple_circulaire.c` / `insertion_simple_circulaire.h`  
 - **Fonctions principales :**  
-  - `insererTeteCirculaire()`  
-  - `insererQueueCirculaire()`  
+  - `insert_front_in_simple_circular_list()`  
+  - `insert_back_in_simple_circular_list()`  
 - **Description :**  
   Ajoute un élément soit au début soit à la fin d’une liste circulaire simple.  
 - **Résumé :** première approche des listes circulaires.
@@ -53,8 +53,8 @@ Université de Yaoundé I – L2 Informatique
 📓🖍️5. Insertion en tête et en queue – Liste doublement chaînée circulaire
 - **Fichier :** `insertion_double_circulaire.c` / `insertion_double_circulaire.h`  
 - **Fonctions principales :**  
-  - `insererTeteDoubleCirculaire()`  
-  - `insererQueueDoubleCirculaire()`  
+  - `insert_front_in_doubly_circular_list()`  
+  - `insert_back_in_doubly_circular_list()`  
 - **Description :**  
   Insère en tête ou en queue d’une liste circulaire **double** tout en respectant les pointeurs `prev` et `next`.  
 - **Résumé :** fusion des notions de **double chaînage** et **circularité**.
