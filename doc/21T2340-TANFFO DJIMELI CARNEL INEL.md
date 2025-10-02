@@ -2,7 +2,7 @@
 
 
 ## 📌 Problème
-    La diffucluté principale ici reside dans le fait d'inserser un élement (dans notre solution, un caractere ***char***) 
+La diffucluté principale ici reside dans le fait d'inserser un élement (dans notre solution, un caractere * **char** *) 
 au debut ou a la fin d'une liste simplement chainnée circulaire. 
 Ce projet pospose une solution efficace pour resoudre ce probleme.
 
